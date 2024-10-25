@@ -1,0 +1,208 @@
+<html>
+    <head>  
+        <link rel="stylesheet" href="css/estilos.css">
+        <title>Formularios en HTML</title>
+    </head>
+
+    <body>
+    
+    <header>
+         <h1>Formularios en HTML</h1>
+    </header>
+   
+
+    <nav>
+            <div id="navegador">
+                <button> <a href="index.html"> Inicio </a> </button> 
+                <button> <a href="listas.html"> Listas </a> </button>
+                <button> <a href="enlaces.html"> Enlaces </a> </button>
+                <button> <a href="tablas.html">Tablas </a> </button>
+                <button> <a href="imagenes.html">Imagenes</a> </button>
+                <button> <a href="audio.html">Audio</a> </button>
+                <button> <a href="video.html">Video</a> </button>
+                <button> <a href="formulario.html">Formulario </a></button>
+            </div>
+    </nav>
+    
+   
+    <main>
+   
+            <section>
+                <p>¡Gracias por tomarte el tiempo para compartir tu opinión con nosotros! Este formulario nos ayudará a mejorar la calidad de nuestros servicios y asegurarnos de que estamos cumpliendo con tus expectativas. Por favor, responde las preguntas de manera honesta; tus comentarios son esenciales para nuestro crecimiento. El formulario es breve y solo te tomará unos minutos completarlo. ¡Agradecemos tu colaboración! </p>
+                <br>
+                <form action="/registro" method="post">
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" id="nombre" name="nombre"><br><br>
+                  <label for="correo">Correo electrónico:</label>
+                  <input type="email" id="correo" name="correo"><br><br>
+                  <label for="contraseña">Contraseña:</label>
+                  <input type="password" id="contraseña" name="contraseña"><br><br>
+                  <input type="submit" value="Registrarse">
+                </form>
+
+            </section>
+
+
+            <section>
+                <p>¡Nos encantaría conocerte mejor! Por favor, completa esta sección con tu información básica, como nombre, edad y datos relevantes. Esto nos ayudará a personalizar tu experiencia y, en caso de ser necesario, contactarte para aclaraciones o seguimiento.
+
+                 </p> <br>
+
+                <form action="/contacto" method="post">
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" id="nombre" name="nombre"><br><br>
+                  <label for="correo">Correo electrónico:</label>
+                  <input type="email" id="correo" name="correo"><br><br>
+                  <label for="mensaje">Mensaje:</label>
+                  <textarea id="mensaje" name="mensaje"></textarea><br><br>
+                  <input type="submit" value="Enviar">
+                </form>
+
+            </section>
+
+            <section>
+               <p>Cuéntanos cómo te has sentido con nuestros servicios hasta ahora. Queremos saber tu impresión global, positiva o negativa, para trabajar en base a tus sugerencias y ofrecerte una mejor experiencia en el futuro.
+                </p> <br>
+                 <form action="/suscripcion" method="post">
+                  <label for="correo">Correo electrónico:</label>
+                  <input type="email" id="correo" name="correo"><br><br>
+                  <label for="intereses">Intereses:</label>
+                  <input type="text" id="intereses" name="intereses"><br><br>
+                  <input type="submit" value="Suscribirse">
+                </form>
+            </section>
+
+            <section>
+                <p>¡Gracias por tomarte el tiempo para compartir tu opinión con nosotros! Este formulario nos ayudará a mejorar la calidad de nuestros servicios y asegurarnos de que estamos cumpliendo con tus expectativas. Por favor, responde las preguntas de manera honesta; tus comentarios son esenciales para nuestro crecimiento. El formulario es breve y solo te tomará unos minutos completarlo. ¡Agradecemos tu colaboración! </p> <br>
+                <form action="/encuesta" method="post">
+                  <label for="calificacion">Calificación (1-5):</label>
+                  <input type="number" id="calificacion" name="calificacion" min="1" max="5"><br><br>
+                  <label for="comentarios">Comentarios:</label>
+                  <textarea id="comentarios" name="comentarios"></textarea><br><br>
+                  <input type="submit" value="Enviar">
+                </form>
+
+            </section>
+
+            <section>
+                <p>Proporciona tu correo electrónico, tu nombre y CV para que podamos mantenernos en contacto contigo. Nos comprometemos a proteger tu privacidad y no compartiremos esta información sin tu consentimiento.
+                 </p> <br>
+                <form action="/solicitud_empleo" method="post">
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" id="nombre" name="nombre"><br><br>
+                  <label for="correo">Correo electrónico:</label>
+                  <input type="email" id="correo" name="correo"><br><br>
+                  <label for="cv">Currículum Vitae:</label>
+                  <input type="file" id="cv" name="cv"><br><br>
+                  
+                  <input type="submit" value="Enviar">
+                </form>
+
+            </section>
+
+            <section>
+                <p>Proporciona tu nombre, fecha y hora de tu consulta para que podamos mantenernos en contacto contigo. Nos comprometemos a proteger tu privacidad y no compartiremos esta información sin tu consentimiento. </p> <br>
+                 <form action="/reservar_cita" method="post">
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" id="nombre" name="nombre"><br><br>
+                  <label for="fecha">Fecha:</label>
+                  <input type="date" id="fecha" name="fecha"><br><br>
+                  <label for="hora">Hora:</label>
+                  <input type="time" id="hora" name="hora"><br><br>
+                  <input type="submit" value="Reservar">
+                </form>
+                
+            </section>
+
+            <section>
+                <p>Proporciona tu metodo de pago para que podamos mantenernos en contacto contigo. Nos comprometemos a proteger tu privacidad y no compartiremos esta información sin tu consentimiento.
+
+                    </p> <br>
+                 <form action="/donar" method="post">
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" id="nombre" name="nombre"><br><br>
+                  <label for="monto">Monto:</label>
+                  <input type="number" id="monto" name="monto"><br><br>
+                  <label for="metodo_pago">Método de Pago:</label>
+                  <select id="metodo_pago" name="metodo_pago">
+                    <option value="tarjeta_credito">Tarjeta de Crédito</option>
+                    <option value="paypal">PayPal</option>
+                  </select><br><br>
+                  <input type="submit" value="Donar">
+                </form>
+
+            </section>
+
+            <section>
+                <p>¿Cómo fue tu experiencia con nosotros? En esta sección, te pedimos que califiques aspectos específicos como el trato del personal, la calidad del producto, la facilidad de uso de nuestro sitio web o aplicación, etc. Queremos saber qué estamos haciendo bien y en qué podemos mejorar.
+
+                 </p> <br>
+                <form action="/registro_evento" method="post">
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" id="nombre" name="nombre"><br><br>
+                  <label for="correo">Correo electrónico:</label>
+                  <input type="email" id="correo" name="correo"><br><br>
+                  <label for="evento">Evento:</label>
+                  <input type="text" id="evento" name="evento"><br><br>
+                  <input type="submit" value="Registrarse">
+                </form>
+
+            </section>
+
+            <section>
+                <p>¿Cómo fue tu experiencia con nosotros? En esta sección, te pedimos que califiques aspectos específicos como el trato del personal, la calidad del producto, la facilidad de uso de nuestro sitio web o aplicación, etc. Queremos saber qué estamos haciendo bien y en qué podemos mejorar.
+
+                </p> <br>
+                <form action="/registro_intereses" method="post">
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" id="nombre" name="nombre"><br><br>
+                  <label for="intereses">Selecciona tus intereses:</label><br>
+                  <input type="checkbox" id="tecnologia" name="intereses" value="tecnologia">
+                  <label for="tecnologia">Tecnología</label><br>
+                  <input type="checkbox" id="arte" name="intereses" value="arte">
+                  <label for="arte">Arte</label><br>
+                  <input type="checkbox" id="deportes" name="intereses" value="deportes">
+                  <label for="deportes">Deportes</label><br>
+                  <input type="checkbox" id="musica" name="intereses" value="musica">
+                  <label for="musica">Música</label><br><br>
+                  <input type="submit" value="Registrarse">
+                </form>
+
+
+                
+            </section>
+           
+            <section>
+                <p>Para personalizar nuestras recomendaciones, nos gustaría saber más sobre tus gustos, preferencias y hábitos de consumo. Esto nos ayudará a ofrecerte contenido, productos o servicios que realmente se alineen con lo que buscas.
+                </p> <br>
+                <form action="/encuesta_opinion" method="post">
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" id="nombre" name="nombre"><br><br>
+                  <label for="satisfaccion">Nivel de satisfacción:</label><br>
+                  <input type="checkbox" id="muy_satisfecho" name="satisfaccion" value="muy_satisfecho">
+                  <label for="muy_satisfecho">Muy satisfecho</label><br>
+                  <input type="checkbox" id="satisfecho" name="satisfaccion" value="satisfecho">
+                  <label for="satisfecho">Satisfecho</label><br>
+                  <input type="checkbox" id="neutral" name="satisfaccion" value="neutral">
+                  <label for="neutral">Neutral</label><br>
+                  <input type="checkbox" id="insatisfecho" name="satisfaccion" value="insatisfecho">
+                  <label for="insatisfecho">Insatisfecho</label><br>
+                  <input type="checkbox" id="muy_insatisfecho" name="satisfaccion" value="muy_insatisfecho">
+                  <label for="muy_insatisfecho">Muy insatisfecho</label><br><br>
+                  <input type="submit" value="Enviar">
+                </form>
+
+            </section>
+        
+
+
+
+    </main>
+    
+   
+    <footer>
+            <h5>Elaborado por Vanessa Hernandez Ortega</h5>
+    </footer>
+    
+    </body>
+</html>

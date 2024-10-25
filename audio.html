@@ -1,0 +1,86 @@
+<html>
+    <head>  
+        <link rel="stylesheet" href="css/estilos.css">
+        <title>Audio en HTML</title>
+    </head>
+
+    <body>
+    
+    <header>
+         <h1>Audio en HTML</h1>
+    </header>
+   
+
+    <nav>
+            <div id="navegador">
+                <button> <a href="index.html"> Inicio </a> </button> 
+                <button> <a href="listas.html"> Listas </a> </button>
+                <button> <a href="enlaces.html"> Enlaces </a> </button>
+                <button> <a href="tablas.html">Tablas </a> </button>
+               <button> <a href="imagenes.html">Imagenes</a> </button>
+                <button> <a href="audio.html">Audio</a> </button>
+                <button> <a href="video.html">Video</a> </button>
+                <button> <a href="formulario.html">Formulario </a></button>
+            </div>
+    </nav>
+    
+   
+    <main>
+   
+        <section class="SecAud">
+            <h2>Audios</h2>
+            <br>
+             <p>El audio en HTML se gestiona con la etiqueta audio, que permite incorporar archivos de sonido directamente en una página web sin la necesidad de plugins adicionales. Esta etiqueta soporta formatos comunes como MP3, WAV y Ogg, lo que asegura la compatibilidad con la mayoría de los navegadores. Al igual que con el video, la etiqueta audio admite múltiples fuentes mediante el uso de la etiqueta source, lo que permite garantizar que el archivo de audio sea reproducible en diferentes plataformas, dependiendo del formato que cada navegador soporte.
+</p> <br>
+            <audio controls>
+                 <source src="recursos/audios/audio1.mp3">
+            </audio>
+            </section>
+            
+            <section class="SecAud">
+            <h2>Audios</h2>
+            <br>
+        <p>La etiqueta audio también permite personalizar la experiencia del usuario con controles interactivos. Al agregar el atributo controls, se muestran botones de play, pausa y ajuste de volumen, permitiendo que los visitantes del sitio web gestionen la reproducción de manera intuitiva. Además, se pueden utilizar atributos como autoplay para que el audio se inicie automáticamente al cargar la página, o loop para que se reproduzca en bucle de forma continua, lo que resulta útil en páginas que requieren un ambiente sonoro constante.
+</p> <br>
+        <audio controls autoplay muted>
+            <source src="recursos/audios/audio2.mp3">
+            </audio>
+            </section>
+</section>
+        <section class="SecAud">
+        <h2>Audio</h2>
+        <br>
+        <p>Al igual que los videos, los archivos de audio en HTML pueden incluir una alternativa en caso de que el navegador no soporte la reproducción de audio, mostrando un mensaje o un enlace de descarga al usuario. Esto garantiza que el contenido sonoro siempre esté disponible de alguna forma. Además, es posible configurar audios largos como música o podcasts con funcionalidades avanzadas, como marcadores de tiempo y subtítulos, utilizando JavaScript para crear experiencias auditivas más ricas e interactivas.</p> <br>
+            <audio controls autoplay loop>
+              <source src="recursos/audios/audio3.mp3">
+        El formato de audio no es soportado por tu navegador 
+            </audio>
+   
+    </section>
+        <section class="SecAud">
+        <h2>Audio de banco lista de reproduccion spotify</h2> 
+        <br>
+        <p>Para colocar audio de Spotify en HTML, se utiliza un código de incrustación (embed) proporcionado directamente por Spotify. Este código se obtiene haciendo clic en la opción de "Compartir" en una canción, álbum o playlist dentro de Spotify, y luego seleccionando "Copiar código de incrustación". El código resultante utiliza un iframe, que se inserta en el HTML de la página web, permitiendo que el reproductor de Spotify se visualice y funcione directamente en el sitio. Este método es sencillo y eficaz, ya que el iframe se adapta automáticamente al diseño de la página, ofreciendo controles básicos de reproducción y enlace directo al contenido en Spotify.</p>
+        <br>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3dhjNA0jGA8vHBQ1VdD6vV?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> 
+             </section>
+        <section class="SecAud" >
+        <h2>Audio de banco de audios</h2>
+        <br>
+        <p>Colocar audio desde un banco de audio en HTML es un proceso sencillo que generalmente requiere descargar el archivo de audio desde el banco seleccionado y luego insertarlo en la página web utilizando la etiqueta audio. Los bancos de audio, como FreeSound o AudioJungle, ofrecen archivos en formatos compatibles como MP3 o WAV, que se pueden integrar mediante el atributo src dentro de la etiqueta audio. Además, es posible añadir el atributo controls para permitir a los usuarios reproducir, pausar y ajustar el volumen del audio. De esta manera, puedes aprovechar recursos de calidad profesional y agregarlos fácilmente a tu página web, enriqueciendo la experiencia auditiva del usuario.</p> <br>
+           <iframe frameborder="0" scrolling="no" src="https://freesound.org/embed/sound/iframe/759055/simple/medium/" width="481" height="86"></iframe>
+        </section>
+
+           
+        
+        
+
+    </main>
+    
+   
+    <footer>
+            <h5>Elaborado por Vanessa Hernandez Ortega</h5>
+    </footer>
+    
+    </body>
+</html>

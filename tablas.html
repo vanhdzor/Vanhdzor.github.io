@@ -1,0 +1,253 @@
+<html>
+    <head>  
+        <link rel="stylesheet" href="css/estilos.css">
+        <title>Tablas en HTML</title>
+
+<style type="text/css">
+    
+
+
+    table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  color: black;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #04AA6D;
+  color: white;
+}
+
+td:hover{
+    text-align: left;
+    background-color: 357281;
+  padding: 8px;
+  color: white;
+}
+
+
+</style>
+
+    </head>
+
+    <body>
+    
+    <header>
+         <h1>Tablas en HTML</h1>
+    </header>
+   
+
+    <nav>
+            <div id="navegador">
+                <button> <a href="index.html"> Inicio </a> </button> 
+                <button> <a href="listas.html"> Listas </a> </button>
+                <button> <a href="enlaces.html"> Enlaces </a> </button>
+                <button> <a href="tablas.html">Tablas </a> </button>
+                <button> <a href="imagenes.html">Imagenes</a> </button>
+                <button> <a href="audio.html">Audio</a> </button>
+                <button> <a href="video.html">Video</a> </button>
+                <button> <a href="formulario.html">Formulario </a></button>
+            </div>
+    </nav>
+    
+   
+    <main> 
+   
+        
+            <section>
+                <h2>Tabla simple con separación de borde de celda</h2>
+                <br>
+                <p>Las tablas en HTML son estructuras utilizadas para organizar y presentar datos en filas y columnas. Los elementos principales de una tabla incluyen table, que es el contenedor de toda la tabla; tr, que define una fila; th, que representa las celdas de encabezado, generalmente en negrita; y td, que define las celdas de datos. Otros elementos importantes son caption, que proporciona un título a la tabla, thead, que agrupa los encabezados, tbody, donde se organizan los datos, y tfoot, que se utiliza para el pie de la tabla, comúnmente para totales o resúmenes.</p>
+                <br>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                            <th>Telefono</th>
+                            <th>Cooperación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                           <td>vanesa</td>
+                            <td>23</td>
+                            <td>22 22 22 22 22</td>
+                            <td> ninguna</td>
+                        </tr>
+                        <tr>
+                            <td>rodrigo</td>
+                            <td>17</td>
+                            <td>22 22 22 22 22 </td>
+                            <td>8</td> 
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        
+            
+            <section>
+                <h2>Tablas</h2>
+                <br>
+                <p> Un ejemplo de estructura de tabla podría incluir filas de encabezados y datos, y un pie de tabla para cálculos finales. Además, atributos como border (para definir el ancho del borde) o colspan (para hacer que una celda se extienda sobre varias columnas) son útiles para el control visual. Aunque estos atributos pueden aplicarse directamente en HTML, es recomendable usar CSS para el estilo y la personalización de las tablas, mejorando así la presentación y funcionalidad de los datos.</p>
+                <br>
+                
+                    <table>
+                     <thead>
+                      <tr>
+                        <th>Universidad</th>
+                        <th>Contacto</th>
+                        <th>Campus</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                          <tr>
+                            <td>BUAP</td>
+                            <td>22 22 22 22 22</td>
+                            <td>PUEBLA</td>
+                          </tr>
+                          <tr>
+                            <td>UNAM</td>
+                            <td>22 22 22 22 22</td>
+                            <td>CD MÉXICO</td>
+                          </tr>
+                          <tr>
+                            <td>ANAHUAC</td>
+                            <td>22 22 22 22 22</td>
+                            <td>MONTERREY</td>
+                          </tr>
+                          <tr>
+                            <td>UDLAP</td>
+                            <td>22 22 22 22 22</td>
+                            <td>CHOLULA</td>
+                          </tr>
+                          <tr>
+                            <td>UVP</td>
+                            <td>22 22 22 22 22</td>
+                            <td>PUEBLA</td>
+                          </tr>
+                      </tbody>
+                    </table>
+               
+            </section>
+           
+
+           <section>
+                <h2>Tablas con hover</h2>
+                <br>
+                
+                <br>
+                
+                   <table>
+                      <tr>
+                        <th>Company</th>
+                        <th>Contact</th>
+                        <th>Country</th>
+                      </tr>
+                      <tr>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                      </tr>
+                      <tr>
+                        <td>Centro comercial Moctezuma</td>
+                        <td>Francisco Chang</td>
+                        <td>Mexico</td>
+                      </tr>
+                      <tr>
+                        <td>Ernst Handel</td>
+                        <td>Roland Mendel</td>
+                        <td>Austria</td>
+                      </tr>
+                      <tr>
+                        <td>Island Trading</td>
+                        <td>Helen Bennett</td>
+                        <td>UK</td>
+                      </tr>
+                      <tr>
+                        <td>Laughing Bacchus Winecellars</td>
+                        <td>Yoshi Tannamuri</td>
+                        <td>Canada</td>
+                      </tr>
+                      <tr>
+                        <td>Magazzini Alimentari Riuniti</td>
+                        <td>Giovanni Rovelli</td>
+                        <td>Italy</td>
+                      </tr>
+                    </table>
+               
+            </section>
+           
+
+            <section>
+                <h2>Tablas con overflow</h2>
+                <br>
+                
+                <br>
+                
+                    <table>
+                     <thead>
+                      <tr>
+                        <th>Universidad</th>
+                        <th>Contacto</th>
+                        <th>Campus</th>
+                        <th>Campus</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                          <tr>
+                            <td>BUAP</td>
+                            <td>22 22 22 22 22</td>
+                            <td>PUEBLA</td>
+                            <td>PUEBLA</td>
+                          </tr>
+                          <tr>
+                            <td>UNAM</td>
+                            <td>22 22 22 22 22</td>
+                            <td>CD MÉXICO</td>
+                            <td>PUEBLA</td>
+                          </tr>
+                          <tr>
+                            <td>ANAHUAC</td>
+                            <td>22 22 22 22 22</td>
+                            <td>MONTERREY</td>
+                            <td>PUEBLA</td>
+                          </tr>
+                          <tr>
+                            <td>UDLAP</td>
+                            <td>22 22 22 22 22</td>
+                            <td>CHOLULA</td>
+                            <td>PUEBLA</td>
+                          </tr>
+                          <tr>
+                            <td>UVP</td>
+                            <td>22 22 22 22 22</td>
+                            <td>PUEBLA</td>
+                            <td>PUEBLA</td>
+                          </tr>
+                      </tbody>
+                    </table>
+               
+            </section>
+           
+             
+           
+        
+        
+
+        </main>
+    
+   
+    <footer>
+            <h5>Elaborado por Vanessa Hernandez Ortega</h5>
+    </footer>
+    
+    </body>
+</html>
